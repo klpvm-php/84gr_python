@@ -1,0 +1,20 @@
+{% extends 'bendras_sablonas.html'%}
+
+{% block title %}Naujeinų prenumerata{% endblock %}
+
+{% block pavadinimas %}Naujeinų prenumerata{% endblock %}
+
+{% block turinys %}
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">El. pašto adresas</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">Pateikite savo el. pašto adresą.</div>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Sutinku su svetainės sąlygomis</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Siųsti</button>
+</form>
+{% endblock %}
